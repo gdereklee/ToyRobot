@@ -11,8 +11,8 @@ public class App
         command();
         System.out.println("");
         try {
-        	@SuppressWarnings("resource")
-			Scanner scanner = new Scanner(System.in);
+            @SuppressWarnings("resource")
+            Scanner scanner = new Scanner(System.in);
             Robot robot = new Robot();
             robot.setTable(5,5);
             
@@ -51,6 +51,8 @@ public class App
     	System.out.println("EXIST - quit the program");
     	System.out.println("PLACE X,Y,Z - place your robot location X and Y, face Z. Z has to be NORTH, EAST, SOUTH, WEST");
     	System.out.println("MOVE - move your robot");
+        System.out.println("LEFT - turn left");
+        System.out.println("RIGHT - turn right");	    
     	System.out.println("REPORT - print your robot location");     	
     }
 }
